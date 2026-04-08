@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 1. 表格基礎樣式 */
+        table {
+            border-collapse: collapse; /* 合併邊框 */
+            width: 300px;
+            font-family: Arial, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid black; /* 加上黑色邊框 */
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* 2. 表格顏色設定 */
+        th {
+            background-color: #666666; /* 標題深灰色背景 */
+            color: white;             /* 標題白色文字 */
+        }
+
+        /* 設定特定列的背景顏色 */
+        tr:nth-child(1) td { background-color: yellow; } /* 第一列：黃色 */
+        tr:nth-child(2) td { background-color: white; }  /* 第二列：白色 */
+        tr:nth-child(3) td { background-color: yellow; } /* 第三列：黃色 */
+
+        /* 3. 固定定位的 Div 元件 */
+        .fixed-box {
+            position: fixed;   /* 設定為固定定位 */
+            top: 20px;         /* 距離頂部 20px */
+            right: 20px;       /* 距離右側 20px */
+            width: 150px;
+            height: 120px;
+            border: 3px solid #689f38; /* 綠色粗邊框 */
+            padding: 10px;
+            background-color: white;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="fixed-box">
+        This div element has position: fixed;
+    </div>
+
+</body>
+</html>
