@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-        /* 1. 表格基礎樣式 */
+        
         table {
             border-collapse: collapse; /* 合併邊框 */
             width: 300px;
@@ -10,27 +10,27 @@
         }
 
         th, td {
-            border: 1px solid black; /* 加上黑色邊框 */
+            border: 1px solid black; /* 黑邊框 */
             padding: 10px;
             text-align: left;
         }
 
         /* 2. 表格顏色設定 */
         th {
-            background-color: #666666; /* 標題深灰色背景 */
-            color: white;             /* 標題白色文字 */
+            background-color: #666666; /* 標題的背景 */
+            color: white;             /* 標題白文字 */
         }
 
-        /* 設定特定列的背景顏色 */
-        tr:nth-child(1) td { background-color: yellow; } /* 第一列：黃色 */
-        tr:nth-child(2) td { background-color: white; }  /* 第二列：白色 */
-        tr:nth-child(3) td { background-color: yellow; } /* 第三列：黃色 */
+        /* 特定列的背景顏色 */
+        tr:nth-child(1) td { background-color: yellow; } /* 第一列 */
+        tr:nth-child(2) td { background-color: white; }  /* 第二列 */
+        tr:nth-child(3) td { background-color: yellow; } /* 第三列 */
 
-        /* 3. 固定定位的 Div 元件 */
+        
         .fixed-box {
-            position: fixed;   /* 設定為固定定位 */
-            top: 20px;         /* 距離頂部 20px */
-            right: 20px;       /* 距離右側 20px */
+            position: fixed;   
+            top: 20px;         
+            right: 20px;       
             width: 150px;
             height: 120px;
             border: 3px solid #689f38; /* 綠色粗邊框 */
